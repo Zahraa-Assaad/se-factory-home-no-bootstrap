@@ -1,0 +1,174 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    height : 100%;
+}
+
+/* NavBar */
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.links > li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.links > li:first-child {
+    text-decoration: underline;
+}
+
+/* Hero */
+
+.hero {
+    background-image: url("../assets/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero-content {
+    padding: 40vh 0 10vh 0;
+    width: 50%;
+}
+
+.hero-heading {
+    font-size: 64px;
+    margin-bottom: 40px;
+}
+
+.hero-paragraph {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+  
+/* Company Stat */
+
+.company-stat-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 10vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.company-stat-box{
+    flex-basis : 33.33%;
+    padding-block : 10px;
+}
+
+.company-stat-part{
+    margin-left: 15px;;
+}
+
+.company-stat-numbers{
+    font-size: 42px;
+    color: #0d0;
+    text-align: center;
+}
+
+.company-stat-info{
+    font-size: 34px;
+    text-align: center;
+}
+
+/* Company Skills */
+
+.company-skills-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 48px;
+    padding: 0 6vw;
+    width: 100%;
+}
+
+.company-skills-image{
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.company-skills-image > img{
+    width: 100%;
+}
+
+.company-skills-info{
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.company-skills-info > h1 {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.company-skills-info > p {
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.company-skills-info a{
+    color: #0d0;
+}
+
+
+/* Utilities */
+
+.container {
+    padding: 0 6vw;
+    width: 100%;;
+}
+
+.btn {
+    padding: 8px 14px;
+    border : none;
+    border-radius: 5px;
+}
+
+.btn-green {
+    background-color: #0d0;
+    color : #fff;
+    font-weight: bold;
+}
+
+.dash {
+    border-top: 3px solid #000;
+    width: 20px;
+    margin: 0 auto;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+        flex-direction: column;
+    }
+}

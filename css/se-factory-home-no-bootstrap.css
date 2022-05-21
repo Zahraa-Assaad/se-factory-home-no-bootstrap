@@ -54,12 +54,18 @@ img {
 }
 
 .hero-heading {
-    font-size: 64px;
+    font-size: 34px;
+    font-weight: lighter;
     margin-bottom: 40px;
 }
 
+.hero-heading > h1{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
 .hero-paragraph {
-    font-size: 32px;
+    font-size: 26px;
     margin-bottom: 30px;
 }
   
@@ -78,22 +84,24 @@ img {
 
 .company-stat-box{
     flex-basis : 33.33%;
-    padding-block : 10px;
+    padding: 15px;
 }
 
 .company-stat-part{
-    margin-left: 15px;;
+    margin-left: 15px;
 }
 
 .company-stat-numbers{
-    font-size: 42px;
+    font-size: 52px;
     color: #0d0;
     text-align: center;
+    padding: 20px;
 }
 
 .company-stat-info{
-    font-size: 34px;
+    font-size: large;
     text-align: center;
+    padding : 10px;
 }
 
 /* Company Skills */
@@ -102,15 +110,19 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 48px;
+    margin-bottom: 50px;
     padding: 0 6vw;
     width: 100%;
 }
 
 .company-skills-image{
     width: 50%;
+    height: 100%;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    min-width: 400px;
+    align-content: center;
+    align-items: center;
 }
 
 .company-skills-image > img{
@@ -120,21 +132,267 @@ img {
 .company-skills-info{
     width: 50%;
     margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .company-skills-info > h1 {
-    font-size: 60px;
+    font-size: 46px;
+    font-weight: lighter;
+}
+
+.company-skills-info > strong {
+    font-size: 46px;
     margin-bottom: 50px;
+    font-weight: bolder;
 }
 
 .company-skills-info > p {
-    font-size: 36px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 24px;
     margin-left: 50px;
+    padding-left: 10px;
 }
 
 .company-skills-info a{
+    font-size: 20px;
+    color: #0d0;
+}
+
+
+/* Program Section */
+
+.program-container-box{
+    display: flex;
+    color: #fff;
+    background-color: #0d0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.program-container-box > h1 {
+    padding-top: 30px;
+    font-size: 46px;
+    text-align: center;
+    width: 50vw;
+}
+
+.program-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.program-images > div {
+    width: 30%;
+}
+  
+.program-images > div img {
+    width: 100%;
+}
+
+
+/* Market Section */
+
+.market-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding: 0 6vw;
+    width: 100%;
+}
+
+
+.market-image{
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    min-width: 400px;
+    align-content: center;
+    align-items: center;
+}
+
+.market-image > img{
+    width: 100%;
+}
+
+.market-info{
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.market-info > h1 {
+    font-size: 46px;
+    font-weight: lighter;
+}
+
+.market-info > strong {
+    font-size: 46px;
+    margin-bottom: 50px;
+    font-weight: bolder;
+}
+
+.market-info > p {
+    margin-top: 40px;
+    font-size: 24px;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+.market-info a{
+    font-size: 20px;
+    color: #0d0;
+}
+
+/* Partner Network */
+
+.partner-network{
+    text-align: center;
+}
+
+.partner-network > h1 {
+    font-weight: lighter;
+}
+
+.partner-network > p{
+    margin-top: 20px;
+}
+
+.partner-network-images{
+    width : 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.partner-network-images > img{
+    width: 100%;
+}
+
+.partner-network-images > img:last-child{
+    width: 60%;
+}
+
+
+/* In Media Section */ 
+
+.media-container{
+    background-color: #e6e6e6;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.media-container > h1{
+    padding: 30px;
+    font-size: 38px;
+}
+
+.media-images{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.media-images > img{
+    width: 20%;
+}
+
+
+/* Donors (Funding Partner) Section */
+
+.donors-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.donors-container > h1{
+    padding: 10px;
+    font-size: 38px;
+}
+
+.donors-image{
+    width: 100%;
+}
+
+.donors-image > img{
+    width: 80%;
+}
+
+
+/* Strategic Partners Section */
+
+.strategic-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.strategic-container > h1{
+    padding: 10px;
+    font-size: 38px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.strategic-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.strategic-images > img{
+    width: 25%;
+}
+
+
+/* Subscribe Section */
+
+.subscribe-container{
+    text-align: center;
+    padding: 40px;
+    background-color: #e6e6e6;
+}
+
+.subscribe-container > h1{
+    font-size: 38px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.subscribe-container > p{
+    font-size: 38px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Font */
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: small;
+    padding: 50px;
+    width : 100%;
+}
+
+.footer-container > p{
+    font-weight: bold;
+}
+
+.footer-container a{
+    font-size: 20px;
     color: #0d0;
 }
 
@@ -158,11 +416,28 @@ img {
     font-weight: bold;
 }
 
+.btn-black {
+    padding: 16px 18px;
+    border : none;
+    border-radius: 5px;
+    background-color: #000;
+    color : #fff;
+    font-size:22px;
+    font-weight: bold;
+}
+
 .dash {
     border-top: 3px solid #000;
     width: 20px;
     margin: 0 auto;
 }
+
+.divider {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
 
 
 /* Media Queries */
@@ -171,4 +446,11 @@ img {
     .mobile {
         flex-direction: column;
     }
+    .program-images > div {
+        width: 100%;
+      }
+    
+    .market-image {
+        width: 100%;
+        }
 }
